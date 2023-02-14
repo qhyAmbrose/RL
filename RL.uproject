@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
 	"EngineAssociation": "4.27",
-	"Category": "",
+	"Category": "Samples",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "RL",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"AirSim"
+			]
 		}
 	],
 	"Plugins": [
@@ -17,6 +20,10 @@
 		},
 		{
 			"Name": "RawInput",
+			"Enabled": true
+		},
+		{
+			"Name": "AirSim",
 			"Enabled": true
 		}
 	]
